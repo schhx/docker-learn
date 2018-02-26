@@ -43,7 +43,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>docker-learn.jar</finalName>
+		<finalName>docker-learn</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
