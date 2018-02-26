@@ -1,0 +1,14 @@
+version: '2'
+services:
+  usersrv:
+    image: dockerlearn:latest
+    restart: always
+    build:
+      context: .
+    environment:
+      - JAVA_OPTIONS=-Xms128m -Xmx128m
+    volumes:
+      - /app/log/dockerlearn:/app/log
+      - /app/conf/dockerlearn:/app/conf
+    command: --logging.path=/app/log  --server.port=18080
+    network_mode: "host"
