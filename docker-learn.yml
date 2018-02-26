@@ -1,8 +1,9 @@
 version: '2'
 services:
-  usersrv:
+  dockerlearn:
     image: dockerlearn:latest
     restart: always
+    container_name: dockerlearn
     build:
       context: .
     environment:
